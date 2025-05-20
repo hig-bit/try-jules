@@ -1,35 +1,35 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タスク管理アプリ</title>
+    <title>Task Management App</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1><i class="fas fa-tasks"></i> タスク管理</h1>
+            <h1><i class="fas fa-tasks"></i> Task Management</h1>
             <div class="input-container">
-                <input type="text" id="taskInput" placeholder="新しいタスクを入力...">
-                <button id="addTaskBtn"><i class="fas fa-plus"></i> 追加</button>
+                <input type="text" id="taskInput" placeholder="Enter a new task...">
+                <button id="addTaskBtn"><i class="fas fa-plus"></i> Add</button>
             </div>
         </header>
         
         <div class="filters">
-            <button class="filter-btn active" data-filter="all">すべて</button>
-            <button class="filter-btn" data-filter="active">未完了</button>
-            <button class="filter-btn" data-filter="completed">完了</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
         </div>
         
         <ul id="taskList">
-            <!-- タスクがここに追加されます -->
+            <!-- Tasks will be added here -->
         </ul>
         
         <div class="task-stats">
-            <span id="taskCount">0 件のタスク</span>
-            <button id="clearCompleted">完了したタスクを削除</button>
+            <span id="taskCount">0 tasks</span>
+            <button id="clearCompleted">Clear Completed Tasks</button>
         </div>
     </div>
     
